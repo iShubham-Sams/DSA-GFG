@@ -8,9 +8,11 @@ const computingPoewer = (num, pow) => {
 // console.log(computingPoewer(5, 0));
 
 const efficentAns = (num, pow) => {
-  if (pow == 0) 1;
+  if (pow == 0) {
+    return 1;
+  }
   let halfPow = Math.floor(pow / 2);
-  let temp = Math.pow(num, halfPow);
+  let temp = efficentAns(num, halfPow);
   temp = temp * temp;
   if (pow % 2 == 0) {
     return temp;
