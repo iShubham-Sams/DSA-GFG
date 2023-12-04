@@ -29,3 +29,16 @@ const geeksLeaderInArray = (arr) => {
 };
 
 geeksLeaderInArray(array);
+
+const leadersInArray=(arr)=>{
+  const leaderArr=[arr[arr.length-1]]
+   let leader=arr[arr.length-1]
+   for(let i=arr.length-2;i>=0;i--){
+      if(arr[i]>leader){
+          leader=arr[i]
+          leaderArr.unshift(leader)
+      }
+   }
+   return leaderArr
+}
+console.log(leadersInArray([7,10,4,10,6,5,2]))
