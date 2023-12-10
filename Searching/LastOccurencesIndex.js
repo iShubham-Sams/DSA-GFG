@@ -26,7 +26,7 @@
         }else if(arr[mid]<find){
             low=mid+1
         }else{
-            if(arr[mid]!==arr[mid+1]||mid!==heigh){
+            if(arr[mid]!==arr[mid+1]||mid==heigh){
                 return mid
             }else{
                 low=mid+1
