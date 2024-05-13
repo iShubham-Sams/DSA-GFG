@@ -21,4 +21,27 @@ const checkStringPalindrom = (string, start, end) => {
   );
 };
 
-console.log(checkStringPalindrom(value, 0, value.length - 1));
+// console.log(checkStringPalindrom(value, 0, value.length - 1));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const pala=(checkVal,first,last)=>{
+  if(first>=last){
+    return true
+  }
+  return (checkVal.charAt(first)==checkVal.charAt(last)&& pala(checkVal,first+1,last-1))
+}
+
+console.log(pala("malayalam", 0, "malayalam".length - 1));
