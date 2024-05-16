@@ -25,7 +25,7 @@ for(let i=0;i<arr.length;i++){
 return arr
 }
 
-console.log(deleteInArray([3,8,12,5,6],3))
+// console.log(deleteInArray([3,8,12,5,6],3))
 
 // insert at index
 const insertAtIndex=(arr,ind,num)=>{
@@ -35,4 +35,4 @@ const insertAtIndex=(arr,ind,num)=>{
     arr[ind]=num
     return arr
     }
-    console.log(insertAtIndex([1,2,3,4,5],2,90))
+    // console.log(insertAtIndex([1,2,3,4,5],2,90))

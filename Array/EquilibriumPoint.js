@@ -1,21 +1,24 @@
-let arr=[3,4,8,-9,9,7]
-let arrlast=arr.length-1
-let rightSum=0
+const a=[1,3,5,2,2]
+const leftSum=[]
+leftSum[0]=a[0]
+const rightSum=[]
+rightSum[n-1]=a[n-1]
 
-for(let i=0;i<=arrlast;i++){
-    rightSum+=arr[i]
+for(let i=1;i<n;i++){
+leftSum[i]=a[i]+leftSum[i-1]
 }
 
-const equilibriumPoint=(array)=>{
-    let leftS=0
-for(let i=0;i<array.length;i++){
- rightSum-=arr[i]
- if(leftS==rightSum){
-    return true
- }
- leftS+=arr[i]
-}
-return false
+for(let i=n-2;i>=0;i--){
+    rightSum[i]=a[i]+rightSum[i+1]
 }
 
-console.log(equilibriumPoint(arr))
+const getEquilibriumPoint=(a)=>{
+    for(let i=0;i<a.length;i++){
+        if(leftSum[i]==rightSum[i]){
+            return i
+        }
+    }
+    return -1
+}
+
+console.log(getEquilibriumPoint(array));

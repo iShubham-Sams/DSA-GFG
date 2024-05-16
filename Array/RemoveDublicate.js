@@ -8,6 +8,6 @@ const removeDublicate = (arr) => {
       ans++;
     }
   }
-  return arr;
+  return ans;
 };
 console.log(removeDublicate(array));

@@ -1,4 +1,4 @@
-const array = [7, 10, 4, 3, 6, 5, 2];
+// const array = [7, 10, 4, 3, 6, 5, 2];
 
 // const leaderInArray = (arr) => {
 //   for (let i = 0; i < arr.length; i++) {
@@ -42,3 +42,25 @@ const leadersInArray=(arr)=>{
    return leaderArr
 }
 console.log(leadersInArray([7,10,4,10,6,5,2]))
+
+const array=[2, 3, 10, 6, 4, 8, 1]
+
+const leader=(arr,n)=>{
+    const leftLeader=new Array(n)
+    let leader=arr[n-1]
+    for(let i=n-1;i>=0;i--){
+        if(array[i]>leader){
+            leader=array[i]
+           leftLeader[i]=leader
+        }else{
+            leftLeader[i]=leader
+        }
+    }
+    for(let j=0;j<n;j++){
+        if(arr[j]>=leftLeader[j]){
+    console.log(arr[j])
+            
+        }
+    }
+}
+leader(array,6)

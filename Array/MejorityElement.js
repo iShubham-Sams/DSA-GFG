@@ -1,3 +1,6 @@
+// give a array find any of one index of array element which is in mejority
+const array=[8,8,6,6,6,4,6]
+
 const MejorityElement=(arr)=>{
     let count =1
     let mejority=0

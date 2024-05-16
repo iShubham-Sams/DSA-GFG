@@ -12,5 +12,18 @@ const array = [2, 3, 10, 6, 4, 8, 1];
 //   return maxdiff;
 // };
 // console.log(maximumDiffrense(array));
+const maxDiff=(arr,n)=>{
+    let dif=0
+    let min=arr[0]
+    for(let i=1;i<n;i++){
+       if(arr[i]>min){
+           maxDiff=Math.max(dif,arr[i]-min)
+       } else if(arr[i]<min){
+           min=arr[i]
+       }
+    }
+    console.log(dif)
+}
+maxDiff(array,6)
 
 
