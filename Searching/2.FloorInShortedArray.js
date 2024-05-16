@@ -1,5 +1,5 @@
-const floorInShortedArray=()=>{
-    let ans=-1
+const floorInShortedArray=(arr,x)=>{
+      let ans=-1
         let start=0
         let end=arr.length-1
         while(start<=end){
@@ -13,3 +13,5 @@ const floorInShortedArray=()=>{
         }
         return ans
 }
+
+console.log(floorInShortedArray([1,2,8,10,11,12,19],0));
