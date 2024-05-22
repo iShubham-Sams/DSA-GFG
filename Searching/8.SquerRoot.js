@@ -10,7 +10,7 @@ const squareRoot=(num)=>{
     }else if(squ>num){
         heig=mid-1
     }else{
-              low=mid+1
+        low=mid+1
         ans=mid
     }
     }
