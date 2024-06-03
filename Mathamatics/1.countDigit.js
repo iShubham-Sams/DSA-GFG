@@ -1,3 +1,6 @@
+// Given a number N, the task is to return the count of digits in this number.
+
+
 let x = 47888;
 let length = x.toString().length;
 let countDigit = 0;

@@ -1,11 +1,4 @@
-const computingPoewer = (num, pow) => {
-  let result = 1;
-  for (let i = 1; i <= pow; i++) {
-    result = result * num;
-  }
-  return result;
-};
-// console.log(computingPoewer(5, 0));
+// Given two integers x and n, write a function to compute xn. We may assume that x and n are small and overflow doesn’t happen.
 
 const efficentAns = (num, pow) => {
   if (pow == 0) {

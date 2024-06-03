@@ -1,3 +1,9 @@
+// all natural number divided into two part prime and  composite number
+// 1 is not prime nor composit
+// 2 is only even prime number
+
+// more optimize solution
+
 const mostEfficeantSolution = (num) => {
   if (num == 1) {
     return false;
@@ -12,17 +18,8 @@ const mostEfficeantSolution = (num) => {
       if (num % i == 0 || num % (i + 2) == 0) {
         return false;
       }
-      return true;
-    }
-    return true;
-  }
-};
-const allPrimeNumber = (num) => {
-  for (let i = 1; i <= num; i++) {
-    if (mostEfficeantSolution(i)) {
-      console.log(i);
     }
   }
+  return true;
 };
-
-allPrimeNumber(10);
+console.log(mostEfficeantSolution(5));
