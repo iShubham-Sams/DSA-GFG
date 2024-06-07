@@ -13,4 +13,4 @@ const efficentAns = (num, pow) => {
     return temp * num;
   }
 };
-console.log(efficentAns(5, 8));
+console.log(efficentAns(9, 9));

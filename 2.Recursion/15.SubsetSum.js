@@ -1,3 +1,5 @@
+// /give the array and sum of array we need to find how many subset has array count
+
 const SubsetSum=(arr,integer,sum)=>{
 if(integer===0){
  return sum===0?1:0

@@ -10,4 +10,4 @@ const digitalRoot=(num)=>{
      return digitalRoot(ans)
 }
 
-console.log(digitalRoot(99));
+console.log(digitalRoot(99999));
