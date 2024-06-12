@@ -1,4 +1,8 @@
+// rotate array left by one give an array you have to rotate array by one 
 const array = [1, 2, 3, 4, 5, 6];
+// ans =[2,3,4,5,6,1]
+
+
 const leftRotateByOne = (arr) => {
   let temp = arr[0];
   for (let i = 0; i < arr.length; i++) {

@@ -8,7 +8,6 @@ const frequency=(arr,N)=>{
                 arr[ind]--
                 i++
             }else{
-                let tem=arr[i]
                 arr[i]=arr[ind]
                 arr[ind]=-1
             }
@@ -20,7 +19,11 @@ const frequency=(arr,N)=>{
         }
     }
     for(let i=0;i<N;i++){
+        if(arr[i]!=0)
         arr[i]=arr[i]*-1
     }
     return arr
 }
+let n = 5
+let array= [2, 3, 2, 3, 5]
+console.log(frequency(array,n));

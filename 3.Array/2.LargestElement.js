@@ -1,3 +1,7 @@
+// Given an array arr of size N, the task is to find the largest element in the given array. 
+// Input: arr[] = {10, 20, 4}
+// Output: 20
+
 const arr = [10, 5, 20, 8, 15, 3, 25];
 
 const gfgLargestElement = (arr) => {

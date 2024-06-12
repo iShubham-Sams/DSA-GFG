@@ -4,7 +4,6 @@ const bettingGame=(result)=>{
 let current=4
 let betAmount=1
 for(let i=0;i<result.length;i++){
-
     if(current<=0 || current<betAmount){
         return -1
     }
