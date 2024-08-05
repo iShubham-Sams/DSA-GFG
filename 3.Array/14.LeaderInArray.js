@@ -8,7 +8,7 @@
 
 const array=[7,10,4,10,6,5,2]
 const geeksLeaderInArray = (arr) => {
-  let currentLeader = arr[arraylength - 1];
+  let currentLeader = arr[array.length - 1];
   let leaderArray=[currentLeader]
   for (let i = arr.length - 2; i >= 0; i--) {
     if (arr[i] > currentLeader) {
